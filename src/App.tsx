@@ -9,14 +9,10 @@ function App() {
   const [slipId, setSlipId] = useState<number>(117);
   const [advice, setAdvice] = useState<string>("It is easy to sit up and take notice, what's difficult is getting up and taking action.");
 
-  async function fetchAdvice(slipNumber?: number) {
+  async function fetchAdvice() {
     try {
-      // If a specific slip ID is provided, fetch that ID; otherwise, fetch a random one
-      const url = slipNumber
-        ? `https://api.adviceslip.com/advice/${slipNumber}`
-        : "https://api.adviceslip.com/advice";
 
-      const response = await fetch(url);
+      const response = await fetch("https://api.adviceslip.com/advice");
       const data = await response.json();
       console.log("API response", data);
       setSlipId(data.slip.id);
@@ -25,10 +21,6 @@ function App() {
       console.error("Error fetching advice:", error);
     }
   }
-
-  // useEffect(() => {
-  //   fetchAdvice(117);
-  // }, []);
 
   return (
     <div className="flex flex-col items-center justify-center gap-16">
