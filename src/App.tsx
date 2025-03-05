@@ -23,12 +23,12 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center gap-16">
-      <main className="bg-neutral-dark-grayish-blue px-6 pt-6 rounded-lg flex flex-col items-center justify-center gap-6 max-w-sm">
+    <div className="flex flex-col items-center justify-center gap-16 transition-all duration-300 ease-in-out">
+      <main className="bg-neutral-dark-grayish-blue px-6 pt-6 rounded-lg flex flex-col items-center justify-center gap-6 max-w-md">
         <p className="uppercase font-medium text-primary-neon-green">
           Advice # {slipId}
         </p>
-        <q className="font-bold text-xl">{advice}</q>
+        <q className="font-bold text-xl sm:text-2xl">{advice}</q>
         <div className=" flex flex-col items-center justify-center ">
           <img
             src={mobileDivider}
@@ -43,7 +43,7 @@ function App() {
           <button
             type="button"
             onClick={() => fetchAdvice()}
-            className="bg-primary-neon-green p-4 rounded-full relative -bottom-8 cursor-pointer hover:drop-shadow-3xl transition-colors duration-300 ease-initial"
+            className="bg-primary-neon-green p-4 rounded-full relative -bottom-8 cursor-pointer hover:drop-shadow-3xl"
           >
             <img
               src={dice}
