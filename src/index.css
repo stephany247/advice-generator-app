@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-primary-light-cyan: hsl(193, 38%, 86%);
+  --color-primary-neon-green: hsl(150, 100%, 66%);
+
+  --color-neutral-grayish-blue: hsl(217, 19%, 38%);
+  --color-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-neutral-dark-blue: hsl(218, 23%, 16%);
+
+  --drop-shadow-3xl: 0 0 1rem hsl(150, 100%, 66%);
+}
