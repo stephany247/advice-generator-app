@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "./App.css";
 import mobileDivider from "./assets/images/pattern-divider-mobile.svg";
